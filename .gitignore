@@ -1,0 +1,12 @@
+
+Data/
+
+.idea/
+
+.vscode/
+
+__pycache__/
+
+EDA/
+
+Preprocessed/
