@@ -16,36 +16,44 @@ def preprocess_mta_data():
     df = pd.read_csv(input_file)
     print(f"Initial data shape: {df.shape}")
     
+    # Rename columns to ML-friendly format
+    df.columns = df.columns.str.strip().str.lower().str.replace(' ', '_').str.replace('#_', '')
+    print(f"Columns renamed to: {df.columns.tolist()}")
+    
     # Filter to keep only NYCT Bus and NYCT Subway records
     print("Filtering for NYCT Bus and NYCT Subway records...")
-    df = df[df['Agency'].isin(['NYCT Bus', 'NYCT Subway'])]
+    df = df[df['agency'].isin(['NYCT Bus', 'NYCT Subway'])]
     print(f"Data shape after filtering: {df.shape}")
 
     # Drop the specified columns to focus on the relevant data
-    df.drop(columns=['Event ID', 'Update Number', 'Description'], inplace=True)
+    df.drop(columns=['event_id', 'update_number', 'description'], inplace=True)
     
-    # Remove rows with NaN values in Header column
-    df = df[df['Header'].notna()]
+    # Remove rows with NaN values in header column
+    df = df[df['header'].notna()]
     print(f"Data shape after removing NaN headers: {df.shape}")
 
     # Remove duplicate headers to avoid duplicate data
-    df = df.drop_duplicates(subset=['Header'], keep='first')
+    df = df.drop_duplicates(subset=['header'], keep='first')
     print(f"Data shape after removing duplicates: {df.shape}")
     
-    # Remove rows where Header column contains "this bus"
-    df = df[~df['Header'].str.contains('this bus', case=False, na=False)]
+    # Remove rows where header column contains "this bus"
+    df = df[~df['header'].str.contains('this bus', case=False, na=False)]
     print(f"Data shape after removing 'this bus' rows: {df.shape}")
     
-    # Remove rows where Header column contains "bound track" or "bound tracks"
-    df = df[~df['Header'].str.contains(r'bound\s+tracks?', case=False, na=False, regex=True)]
+    # Remove rows where header column contains "bound track" or "bound tracks"
+    df = df[~df['header'].str.contains(r'bound\s+tracks?', case=False, na=False, regex=True)]
     print(f"Data shape after removing 'bound track(s)' rows: {df.shape}")
     
-    # Remove rows where Header has fewer than 3 words Or fewer than 8 characters, because it's too short to be a valid header
-    df = df[(df['Header'].str.split().str.len() >= 3) | (df['Header'].str.len() >= 8)]
+    # Remove rows where header column contains "You may wait longer for these buses"
+    df = df[~df['header'].str.contains('You may wait longer for these buses', case=False, na=False)]
+    print(f"Data shape after removing 'You may wait longer for these buses' rows: {df.shape}")
+    
+    # Remove rows where header has fewer than 3 words Or fewer than 8 characters, because it's too short to be a valid header
+    df = df[(df['header'].str.split().str.len() >= 3) | (df['header'].str.len() >= 8)]
     print(f"Data shape after applying minimum length filter: {df.shape}")
     
-    # Convert Affected column to JSON array format
-    df['Affected'] = df['Affected'].apply(lambda x: json.dumps(x.split(' | ')) if pd.notna(x) else '[]')
+    # Convert affected column to JSON array format
+    df['affected'] = df['affected'].apply(lambda x: json.dumps(x.split(' | ')) if pd.notna(x) else '[]')
     
     # Create output directory
     if not os.path.exists(output_dir):
