@@ -450,19 +450,28 @@ def prepare_re_dataset(df: pd.DataFrame, tokenizer, negative_ratio: float = 1.0)
 
 def split_dataset(dataset: Dataset, train_ratio: float = 0.7, val_ratio: float = 0.15) -> DatasetDict:
     """
-    Split dataset into train/val/test sets.
-    """
-    # First split: train vs (val + test)
-    train_test = dataset.train_test_split(test_size=(1 - train_ratio), seed=42)
+    Split dataset into train/val/test sets using temporal ordering (NO SHUFFLING).
     
-    # Second split: val vs test (from the remaining data)
-    val_test_ratio = val_ratio / (1 - train_ratio)
-    val_test = train_test["test"].train_test_split(test_size=(1 - val_test_ratio), seed=42)
+    This preserves the temporal order from the source CSV which is sorted by date.
+    """
+    n = len(dataset)
+    train_end = int(n * train_ratio)
+    val_end = int(n * (train_ratio + val_ratio))
+    
+    # Use select() to slice the dataset
+    train_dataset = dataset.select(range(0, train_end))
+    val_dataset = dataset.select(range(train_end, val_end))
+    test_dataset = dataset.select(range(val_end, n))
+    
+    print(f"\n  Temporal split (no shuffling):")
+    print(f"    Train: indices 0-{train_end-1} ({len(train_dataset):,} samples)")
+    print(f"    Val:   indices {train_end}-{val_end-1} ({len(val_dataset):,} samples)")
+    print(f"    Test:  indices {val_end}-{n-1} ({len(test_dataset):,} samples)")
     
     return DatasetDict({
-        "train": train_test["train"],
-        "validation": val_test["train"],
-        "test": val_test["test"],
+        "train": train_dataset,
+        "validation": val_dataset,
+        "test": test_dataset,
     })
 
 
@@ -493,6 +502,12 @@ def main():
     
     # Load data
     df = load_data(INPUT_FILE)
+    
+    # IMPORTANT: Sort by date for temporal splitting
+    print("\nSorting by date for temporal split...")
+    df['date'] = pd.to_datetime(df['date'])
+    df = df.sort_values('date').reset_index(drop=True)
+    print(f"Date range: {df['date'].min()} to {df['date'].max()}")
     
     # ========== NER DATASET ==========
     ner_dataset = prepare_ner_dataset(df, tokenizer)
