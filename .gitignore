@@ -12,3 +12,9 @@ EDA/
 Preprocessed/
 
 *.csv
+
+final_data/
+
+models/
+
+*.DS_Store
