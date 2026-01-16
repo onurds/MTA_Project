@@ -1,5 +1,4 @@
 
-Data/
 
 .idea/
 
@@ -9,8 +8,7 @@ __pycache__/
 
 EDA/
 
-Preprocessed/
-
+*.xlsx
 *.csv
 
 final_data/

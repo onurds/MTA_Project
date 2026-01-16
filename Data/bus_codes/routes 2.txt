@@ -1,0 +1,93 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color
+Q06,MTABC,Q6,"Jamaica - Sutphin Blvd - Jfk Cargo Area","Via Sutphin Bl. - Rockaway Bl.",3,https://new.mta.info/schedules/bus,EE352E,FFFFFF
+Q07,MTABC,Q7,"Cypress Hills - Rockaway Blvd - Jfk Travel Plz.","Via Rockaway Bl.",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q08,MTABC,Q8,"Gateway Mall / East Ny - Jamaica","Via 101 Av.",3,https://new.mta.info/schedules/bus,EE352E,FFFFFF
+Q09,MTABC,Q9,"Jamaica - South Ozone Park","Via Lincoln St. - 130 St.",3,https://new.mta.info/schedules/bus,B933AD,FFFFFF
+Q10,MTABC,Q10,"Jfk Airtrain - Kew Gardens Via Rockaway","",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q11,MTABC,Q11,"Howard Beach - Elmhurst","Via Cross Bay Bl. - Woodhaven Bl.",3,https://new.mta.info/schedules/bus,6CBE45,FFFFFF
+Q18,MTABC,Q18,"Astoria - Maspeth","Via 30 Av",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q19,MTABC,Q19,"Flushing - Astoria","Via Astoria Blvd",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q22,MTABC,Q22,"Rockaway Beach Bl / Beach Channel Dr","Via Rockaway Beach Bl. - Beach Channel Dr.",3,https://new.mta.info/schedules/bus,EE352E,FFFFFF
+Q23,MTABC,Q23,"East Elmhurst - Forest Hills","Via 108 St",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q25,MTABC,Q25,"College Point - Jamaica","Via Parsons Blvd / Kissena Blvd / 127 St",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q26,MTABC,Q26,"College Point - Fresh Meadows","Via College Point Blvd / Parsons Blvd / 46 Av",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q28,MTABC,Q28,"Flushing - Bay Terrace Rush","Via Northern Blvd / Francis Lewis Blvd / Crocheron Av",3,https://new.mta.info/schedules/bus,B933AD,FFFFFF
+Q32,MTABC,Q32,"Jackson Heights - Penn Station (Midtown)","Via Roosevelt Av / Queens Blvd / 5 Av / Madison Av",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q33,MTABC,Q33,"Marine Air Terminal Lga-Jackson Heights","Via Roosevelt Av / 82 & 83 Sts",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q35,MTABC,Q35,"Rockaway Park - Midwood / Brooklyn Coll.","Via Rockaway Beach Bl. - Flatbush Av.",3,https://new.mta.info/schedules/bus,006CB7,FFFFFF
+Q37,MTABC,Q37,"Kew Gardens - South Ozone Park","",3,https://new.mta.info/schedules/bus,00AEEF,FFFFFF
+Q40,MTABC,Q40,"South Ozone Park - Jamaica","Via 142 St.",3,https://new.mta.info/schedules/bus,B933AD,FFFFFF
+Q41,MTABC,Q41,"Jamaica - Howard Beach","",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q47,MTABC,Q47,"East Elmhurst - Glendale","Via 80 St / 74 & 75 Sts / 23 Av",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q49,MTABC,Q49,"East Elmhurst - Jackson Heights","Via 35 Av / 89 & 92 Sts / Astoria Blvd",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q50,MTABC,Q50,"Co-Op City/Pelham Bay - Flushing Ltd","",3,https://new.mta.info/schedules/bus,EE352E,FFFFFF
+Q51,MTABC,Q51,"Linden Blvd Limited","Via Linden Bl.",3,https://new.mta.info/schedules/bus,EE352E,FFFFFF
+Q60,MTABC,Q60,"Queens Blvd. - East Midtown","Via Queens Blvd.",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q63,MTABC,Q63,"Flushing - Long Island City Rush","Via Northern Blvd / Jackson Av",3,https://new.mta.info/schedules/bus,B933AD,FFFFFF
+Q64,MTABC,Q64,"Electchester - Forest Hills","Via Jewel Av",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q65,MTABC,Q65,"Flushing - Jamaica","Via Sanford Av / 164 St",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q66,MTABC,Q66,"Flushing - Long Island City","Via Northern Blvd / 21 St",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q69,MTABC,Q69,"East Elmhurst - Long Island City","Via 21 St / Ditmars Blvd",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q72,MTABC,Q72,"LaGuardia Airport - Rego Park","Via Junction Blvd",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q74,MTABC,Q74,"Forest Hills - Qcc Ltd","Via Jewel Av / Horace Harding Expwy",3,https://new.mta.info/schedules/bus,EE352E,FFFFFF
+Q80,MTABC,Q80,"Jfk Airtrain - Kew Gardens Via Lefferts","",3,https://new.mta.info/schedules/bus,EE352E,FFFFFF
+B100,MTABC,B100,"Mill Basin - Midwood","Via Fillmore Av / Quentin Rd",3,https://new.mta.info/schedules/bus,B933AD,FFFFFF
+B103,MTABC,B103,"Canarsie - Downtown Brooklyn Ltd","",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+BM1,MTABC,BM1,"Mill Basin - Downtown/Midtown","Via E 66 St / Ave K / Ocean Av / Cortelyou Rd",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+BM2,MTABC,BM2,"Canarsie/Spring Creek - Downtown/Midtown","Via Ave M/ Ave H / Cortelyou Rd",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+BM3,MTABC,BM3,"Sheepshead Bay - Downtown/Midtown","Via Sheepshead Bay / Ocean Ave / Cortelyou Rd",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+BM4,MTABC,BM4,"Gerritsen Beach - Downtown/Midtown","Via Gerritsen Av / Nostrand Av / Ocean Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+BM5,MTABC,BM5,"Spring Creek - Midtown","Via Pennsylvania Av / Linden Blvd / Woodhaven Blvd",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+BX23,MTABC,Bx23,"Pelham Bay - Co-Op City","",3,https://new.mta.info/schedules/bus,B933AD,FFFFFF
+BXM1,MTABC,BxM1,"Riverdale - East Midtown","Via Riverdale / H. Hudson / Lex & 3 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+BXM10,MTABC,BxM10,"Williamsbridge/Morris Park - Midtown","",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+BXM11,MTABC,BxM11,"Wakefield - Midtown","Via White Plains Rd / 5Th & Madison Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+BXM18,MTABC,BxM18,"Riverdale - Downtown","Via Riverdale / H. Hudsn / Bway & Trnty",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+BXM2,MTABC,BxM2,"Riverdale - West Midtown","Via Riverdale / H. Hudson / 6Th & 7Th Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+BXM3,MTABC,BxM3,"Yonkers - Midtown","Via Bway / Sedgwick Av / 5Th & Madison",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+BXM4,MTABC,BxM4,"Woodlawn - Midtown","Via Katonah Av / Grand Concourse",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+BXM6,MTABC,BxM6,"Parkchester - Midtown","",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+BXM7,MTABC,BxM7,"Co-Op City - Midtown","",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+BXM8,MTABC,BxM8,"Pelham Bay/City Island - Midtown","",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+BXM9,MTABC,BxM9,"Throgs Neck - Midtown Express","Via Edgewater Pk / Throgs Neck / Schuylerville",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+Q100,MTABC,Q100,"Rikers Island - Long Island City Ltd","Via 21 St",3,https://new.mta.info/schedules/bus,EE352E,FFFFFF
+Q101,MTABC,Q101,"Steinway - Hunters Point","Via Steinway St / Jackson Av",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q102,MTABC,Q102,"Roosevelt Island - Long Island City","Via 36 Av / 31 St / Jackson Av",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q103,MTABC,Q103,"Astoria - Hunters Point","Via Vernon Blvd / 21 St",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q104,MTABC,Q104,"Astoria - Sunnyside","Via Broadway / 48 St",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q110,MTABC,Q110,"Jamaica Avenue East","Via Jamaica Av.",3,https://new.mta.info/schedules/bus,FAA61A,FFFFFF
+Q111,MTABC,Q111,"Rosedale - Jamaica Rush","Via Brewer Bl. / 147 Av.",3,https://new.mta.info/schedules/bus,B933AD,FFFFFF
+Q112,MTABC,Q112,"Jamaica - East Ny","Via Liberty Ave.",3,https://new.mta.info/schedules/bus,EE352E,FFFFFF
+Q113,MTABC,Q113,"Far Rockaway - Jamaica Limited","Via Brewer Blvd / Rockaway Blvd / Nassau Expwy",3,https://new.mta.info/schedules/bus,EE352E,FFFFFF
+Q114,MTABC,Q114,"Far Rockaway - Jamaica Rush","Via Brewer Bl. / Rockaway Tpke.",3,https://new.mta.info/schedules/bus,B933AD,FFFFFF
+Q115,MTABC,Q115,"Brewer Blvd. Local","Via Brewer Bl.",3,https://new.mta.info/schedules/bus,EE352E,FFFFFF
+QM1,MTABC,QM1,"Fresh Meadows - Midtown Express","Via 188 St / Union Turnpike / 6 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM10,MTABC,QM10,"Lefrak City - Midtown Express","Via 63 Rd / 57 Av / 6 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM11,MTABC,QM11,"Forest Hills - Downtown Express","Via Queens Blvd / 63 Rd / 57 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM12,MTABC,QM12,"Forest Hills - Midtown Express","Via Yellowstone Blvd / 6 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM15,MTABC,QM15,"Lindenwood - Midtown Express","",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM16,MTABC,QM16,"Neponsit - Midtown Express","",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM17,MTABC,QM17,"Far Rockaway - Midtown Express","",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM18,MTABC,QM18,"South Ozone Park - Midtown Express","",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM2,MTABC,QM2,"Bay Terrace - Midtown Express","Via Cross Island Pkwy / Whitestone Expwy / 6 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM20,MTABC,QM20,"Bay Terrace - Midtown Express","Via 26 Av / Utopia Pkwy / Willets Point Blvd / Mitchell Gardens",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM21,MTABC,QM21,"Rochdale Village - Midtown Exp.","Via Brewer Bl. / Linden Bl.",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM24,MTABC,QM24,"Glendale - Midtown Express","Via Myrtle Av / Fresh Pond Rd / Eliot Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM25,MTABC,QM25,"Glendale - Downtown Express","Via Myrtle Av / Fresh Pond Rd / Eliot Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM31,MTABC,QM31,"Fresh Meadows - Midtown Express","Via 188 St / Union Turnpike / 3 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM32,MTABC,QM32,"Bay Terrace - Midtown Express","Via Cross Island Pkwy / Whitestone Expwy / 3 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM34,MTABC,QM34,"Glendale - Midtown Express","Via Myrtle Av / Fresh Pond Rd / Eliot Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM35,MTABC,QM35,"Glen Oaks - Midtown Express","Via Horace Harding Expwy / 73 Av / Union Turnpike / 3 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM36,MTABC,QM36,"Lake Success - Midtown Express","Via North Shore Towers / Union Turnpike / 3 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM4,MTABC,QM4,"Electchester - Midtown Express","Via Jewel Av / 6 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM40,MTABC,QM40,"Lefrak City - Midtown Express","Via 63 Rd / 57 Av / 3 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM42,MTABC,QM42,"Forest Hills - Midtown Express","Via Yellowstone Blvd / 3 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM44,MTABC,QM44,"Electchester - Midtown Express","Via Jewel Av / 3 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM5,MTABC,QM5,"Glen Oaks - Midtown Express","Via Horace Harding Expwy / 73 Av / Union Turnpike / 6 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM6,MTABC,QM6,"Lake Success - Midtown Express","Via North Shore Towers / Union Turnpike / 6 Av",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM65,MTABC,QM65,"Laurelton-Rochdale-Lower Manhattan","Via Merrick Bl. - Brewer Bl. - Linden Bl.",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM7,MTABC,QM7,"Fresh Meadows - Downtown Express","Via 188 St / Union Turnpike",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+QM8,MTABC,QM8,"Glen Oaks - Downtown Express","Via Horace Harding Expwy / 73 Av / Union Turnpike",3,https://new.mta.info/schedules/bus,00933C,FFFFFF
+Q52+,MTABC,Q52-SBS,"Elmhurst - Arverne Sbs Vis Woodhaven/Cross Bay","Via Woodhaven Bl. - Cross Bay Bl.",3,https://new.mta.info/schedules/bus,006CB7,FFFFFF
+Q53+,MTABC,Q53-SBS,"Woodside - Rockaway Park","Via Broadway / Queens Blvd / Woodhaven Blvd / Cross Bay Blvd",3,https://new.mta.info/schedules/bus,006CB7,FFFFFF
+Q70+,MTABC,Q70-SBS,"LaGuardia Link","Woodside LIRR, Jackson Heights E F M R 7 Subway, LaGuardia Airport",3,https://new.mta.info/schedules/bus,006CB7,FFFFFF
