@@ -11,26 +11,26 @@ RANDOM_SEED = 42
 
 # Target distribution
 COMPLEXITY_DISTRIBUTION = {
-    'simple': 300,      # 50%: 1-2 entities total
-    'moderate': 180,    # 30%: 3-4 entities total
-    'complex': 120      # 20%: 5+ entities total
+    'simple': 120,      # 20%: 2 directions
+    'moderate': 240,    # 40%: 3-4 directions
+    'complex': 240      # 40%: 4+ directions
 }
 
 def calculate_complexity(row):
-    # Calculate complexity score based on number of routes and directions.
+    # Calculate complexity score based on number of directions only.
     try:
-        num_routes = len(json.loads(row['affected_spans']))
         num_directions = len(json.loads(row['direction_spans']))
-        total_entities = num_routes + num_directions
         
-        if total_entities <= 2:
+        if num_directions == 2:
             return 'simple'
-        elif total_entities <= 4:
+        elif num_directions in [3, 4]:
             return 'moderate'
-        else:
+        elif num_directions > 4:
             return 'complex'
+        else:
+            return None  # Exclude rows with less than 2 directions
     except:
-        return 'simple'  # Default for parsing errors
+        return None  # Default for parsing errors
 
 def get_direction_types(row):
     # Extract all direction types from direction_spans.
@@ -129,6 +129,13 @@ def main():
     print("\nCalculating complexity scores...")
     df['complexity'] = df.apply(calculate_complexity, axis=1)
     
+    # Filter out rows with less than 2 directions
+    print(f"\nFiltering rows with at least 2 directions...")
+    original_count = len(df)
+    df = df[df['complexity'].notna()].copy()
+    filtered_count = len(df)
+    print(f"Kept {filtered_count:,} of {original_count:,} records ({100*filtered_count/original_count:.1f}%)")
+    
     # Print complexity distribution
     print("\nComplexity distribution in full dataset:")
     for complexity, count in df['complexity'].value_counts().items():
@@ -157,9 +164,7 @@ def main():
     gold_df.to_csv(OUTPUT_FILE, index=False)
     
     # Print summary statistics
-    print("\n" + "=" * 70)
     print("GOLD SAMPLE SUMMARY")
-    print("=" * 70)
     print(f"Total samples: {len(gold_df):,}")
     print(f"\nColumns in gold dataset:")
     for i, col in enumerate(gold_df.columns, 1):
@@ -195,10 +200,8 @@ def main():
         count = sum(1 for x in direction_counts if x == i)
         print(f"  {i} direction(s): {count} samples")
     
-    print("\n" + "=" * 70)
-    print("DONE! Ready for gold annotation.")
+    print("Ready for gold annotation.")
     print(f"Output file: {OUTPUT_FILE}")
-    print("=" * 70)
 
 if __name__ == "__main__":
     main()
