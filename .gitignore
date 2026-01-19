@@ -10,6 +10,7 @@ __pycache__/
 
 *.xlsx
 *.csv
+!/Results/*.csv
 
 final_data/
 
