@@ -6,7 +6,7 @@
 
 __pycache__/
 
-
+final_data_gold/
 
 *.xlsx
 *.csv

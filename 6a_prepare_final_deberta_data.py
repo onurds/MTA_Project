@@ -395,12 +395,18 @@ def create_re_candidate_pairs(
             # Determine label
             label = 1 if (route_id, direction_id) in positive_pairs else 0
             
+            # Extract entity text for header-level evaluation
+            route_text = text[route['start']:route['end']]
+            direction_text = text[direction['start']:direction['end']]
+
             samples.append({
                 "input_ids": encoding["input_ids"],
                 "attention_mask": encoding["attention_mask"],
                 "label": label,
                 "route_id": route_id,
                 "direction_id": direction_id,
+                "route_text": route_text,
+                "direction_text": direction_text,
             })
     
     return samples
@@ -426,6 +432,9 @@ def prepare_re_dataset(
     all_labels = []
     all_route_ids = []
     all_direction_ids = []
+    all_header_ids = []
+    all_route_texts = []
+    all_direction_texts = []
     
     positive_count = 0
     negative_count = 0
@@ -463,6 +472,9 @@ def prepare_re_dataset(
             all_labels.append(sample["label"])
             all_route_ids.append(sample["route_id"])
             all_direction_ids.append(sample["direction_id"])
+            all_header_ids.append(idx)
+            all_route_texts.append(sample["route_text"])
+            all_direction_texts.append(sample["direction_text"])
     
     dataset = Dataset.from_dict({
         "input_ids": all_input_ids,
@@ -470,6 +482,9 @@ def prepare_re_dataset(
         "labels": all_labels,
         "route_id": all_route_ids,
         "direction_id": all_direction_ids,
+        "header_id": all_header_ids,
+        "route_text": all_route_texts,
+        "direction_text": all_direction_texts,
     })
     
     print(f"  Created RE dataset with {len(dataset):,} samples")
