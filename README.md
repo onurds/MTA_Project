@@ -175,5 +175,5 @@ When i test on the gold dataset with the harder examples, i think the scores wil
 - Completed - **Design:** Stratified sampling design is implemented to ensure rigorous evaluation.
 - Completed - **Neural NER:** Implementation complete and validated on Silver data.
 - Completed - **Gold Annotation:** Currently in progress (600 samples).
-1. > Pending - Comparison of the gold dataset to heuristic RE.
-2. > Pending - Using the gold dataset to compare the neural models and the weak supervision. 
+- Completed - Comparison of the gold dataset to heuristic RE.
+- Completed - Using the gold dataset to compare the neural models and the weak supervision. 
